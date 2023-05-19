@@ -134,7 +134,7 @@
             // rbSi
             // 
             this.rbSi.AutoSize = true;
-            this.rbSi.Location = new System.Drawing.Point(41, 29);
+            this.rbSi.Location = new System.Drawing.Point(41, 28);
             this.rbSi.Name = "rbSi";
             this.rbSi.Size = new System.Drawing.Size(34, 17);
             this.rbSi.TabIndex = 0;
