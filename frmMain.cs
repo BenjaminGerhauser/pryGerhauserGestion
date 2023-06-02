@@ -16,5 +16,12 @@ namespace pryGestion
         {
             InitializeComponent();
         }
+
+        private void btnRegistrarse_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmRegistrar Registrar = new frmRegistrar();    
+            Registrar.ShowDialog(); 
+        }
     }
 }

@@ -31,7 +31,7 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.txtDetalle = new System.Windows.Forms.TextBox();
             this.lblTipoActividad = new System.Windows.Forms.Label();
-            this.dtp = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.cboTipo = new System.Windows.Forms.ComboBox();
             this.lblDetalleActividad = new System.Windows.Forms.Label();
@@ -46,6 +46,9 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.lblMostrar = new System.Windows.Forms.Label();
+            this.btnMostrar = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.mrcReunion.SuspendLayout();
             this.mrcTareas.SuspendLayout();
             this.SuspendLayout();
@@ -75,12 +78,12 @@
             this.lblTipoActividad.TabIndex = 2;
             this.lblTipoActividad.Text = "Tipo Actividad";
             // 
-            // dtp
+            // dtpFecha
             // 
-            this.dtp.Location = new System.Drawing.Point(107, 15);
-            this.dtp.Name = "dtp";
-            this.dtp.Size = new System.Drawing.Size(200, 20);
-            this.dtp.TabIndex = 3;
+            this.dtpFecha.Location = new System.Drawing.Point(107, 15);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(200, 20);
+            this.dtpFecha.TabIndex = 3;
             // 
             // label3
             // 
@@ -94,7 +97,15 @@
             // 
             // cboTipo
             // 
+            this.cboTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipo.FormattingEnabled = true;
+            this.cboTipo.Items.AddRange(new object[] {
+            "Relevamiento",
+            "Propuesta",
+            "Diagnostico",
+            "Analisis",
+            "Diagrama de base de datos",
+            "Programacion"});
             this.cboTipo.Location = new System.Drawing.Point(107, 57);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(121, 21);
@@ -130,6 +141,7 @@
             this.rbNo.TabStop = true;
             this.rbNo.Text = "No";
             this.rbNo.UseVisualStyleBackColor = true;
+            this.rbNo.Click += new System.EventHandler(this.rbNo_Click);
             // 
             // rbSi
             // 
@@ -141,6 +153,7 @@
             this.rbSi.TabStop = true;
             this.rbSi.Text = "Si";
             this.rbSi.UseVisualStyleBackColor = true;
+            this.rbSi.Click += new System.EventHandler(this.rbSi_Click);
             // 
             // mrcTareas
             // 
@@ -158,6 +171,7 @@
             // chkDebate
             // 
             this.chkDebate.AutoSize = true;
+            this.chkDebate.Enabled = false;
             this.chkDebate.Location = new System.Drawing.Point(131, 56);
             this.chkDebate.Name = "chkDebate";
             this.chkDebate.Size = new System.Drawing.Size(61, 17);
@@ -168,6 +182,7 @@
             // chkNotas
             // 
             this.chkNotas.AutoSize = true;
+            this.chkNotas.Enabled = false;
             this.chkNotas.Location = new System.Drawing.Point(31, 56);
             this.chkNotas.Name = "chkNotas";
             this.chkNotas.Size = new System.Drawing.Size(92, 17);
@@ -178,6 +193,7 @@
             // chkInvestigacion
             // 
             this.chkInvestigacion.AutoSize = true;
+            this.chkInvestigacion.Enabled = false;
             this.chkInvestigacion.Location = new System.Drawing.Point(131, 33);
             this.chkInvestigacion.Name = "chkInvestigacion";
             this.chkInvestigacion.Size = new System.Drawing.Size(89, 17);
@@ -188,6 +204,7 @@
             // chkRepositorio
             // 
             this.chkRepositorio.AutoSize = true;
+            this.chkRepositorio.Enabled = false;
             this.chkRepositorio.Location = new System.Drawing.Point(31, 33);
             this.chkRepositorio.Name = "chkRepositorio";
             this.chkRepositorio.Size = new System.Drawing.Size(79, 17);
@@ -203,6 +220,7 @@
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnRegistrar
             // 
@@ -212,6 +230,7 @@
             this.btnRegistrar.TabIndex = 10;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // label5
             // 
@@ -222,11 +241,41 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Grabar la seleccion en variables";
             // 
+            // lblMostrar
+            // 
+            this.lblMostrar.AutoSize = true;
+            this.lblMostrar.Location = new System.Drawing.Point(18, 362);
+            this.lblMostrar.Name = "lblMostrar";
+            this.lblMostrar.Size = new System.Drawing.Size(35, 13);
+            this.lblMostrar.TabIndex = 12;
+            this.lblMostrar.Text = "label1";
+            // 
+            // btnMostrar
+            // 
+            this.btnMostrar.Location = new System.Drawing.Point(18, 377);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(75, 21);
+            this.btnMostrar.TabIndex = 13;
+            this.btnMostrar.Text = "Mostrar";
+            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(224, 125);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(192, 121);
+            this.listBox1.TabIndex = 14;
+            // 
             // frmRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(428, 456);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnMostrar);
+            this.Controls.Add(this.lblMostrar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.btnCancelar);
@@ -235,7 +284,7 @@
             this.Controls.Add(this.lblDetalleActividad);
             this.Controls.Add(this.cboTipo);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dtp);
+            this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.lblTipoActividad);
             this.Controls.Add(this.txtDetalle);
             this.Controls.Add(this.lblFecha);
@@ -255,7 +304,7 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.TextBox txtDetalle;
         private System.Windows.Forms.Label lblTipoActividad;
-        private System.Windows.Forms.DateTimePicker dtp;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cboTipo;
         private System.Windows.Forms.Label lblDetalleActividad;
@@ -270,5 +319,8 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblMostrar;
+        private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
