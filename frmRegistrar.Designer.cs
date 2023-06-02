@@ -32,7 +32,6 @@
             this.txtDetalle = new System.Windows.Forms.TextBox();
             this.lblTipoActividad = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
             this.cboTipo = new System.Windows.Forms.ComboBox();
             this.lblDetalleActividad = new System.Windows.Forms.Label();
             this.mrcReunion = new System.Windows.Forms.GroupBox();
@@ -45,10 +44,7 @@
             this.chkRepositorio = new System.Windows.Forms.CheckBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblMostrar = new System.Windows.Forms.Label();
             this.btnMostrar = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.mrcReunion.SuspendLayout();
             this.mrcTareas.SuspendLayout();
             this.SuspendLayout();
@@ -84,16 +80,6 @@
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(200, 20);
             this.dtpFecha.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 424);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(423, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Relevamient, propuesta, diagnostico, analisis, diagrama de base de datos, program" +
-    "acion";
             // 
             // cboTipo
             // 
@@ -232,24 +218,6 @@
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 437);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(158, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Grabar la seleccion en variables";
-            // 
-            // lblMostrar
-            // 
-            this.lblMostrar.AutoSize = true;
-            this.lblMostrar.Location = new System.Drawing.Point(18, 362);
-            this.lblMostrar.Name = "lblMostrar";
-            this.lblMostrar.Size = new System.Drawing.Size(35, 13);
-            this.lblMostrar.TabIndex = 12;
-            this.lblMostrar.Text = "label1";
-            // 
             // btnMostrar
             // 
             this.btnMostrar.Location = new System.Drawing.Point(18, 377);
@@ -260,36 +228,24 @@
             this.btnMostrar.UseVisualStyleBackColor = true;
             this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(224, 125);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(192, 121);
-            this.listBox1.TabIndex = 14;
-            // 
             // frmRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(428, 456);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnMostrar);
-            this.Controls.Add(this.lblMostrar);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.mrcTareas);
             this.Controls.Add(this.mrcReunion);
             this.Controls.Add(this.lblDetalleActividad);
             this.Controls.Add(this.cboTipo);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.lblTipoActividad);
             this.Controls.Add(this.txtDetalle);
             this.Controls.Add(this.lblFecha);
             this.Name = "frmRegistrar";
-            this.Text = "frmRegistrar";
+            this.Text = "Registro";
             this.mrcReunion.ResumeLayout(false);
             this.mrcReunion.PerformLayout();
             this.mrcTareas.ResumeLayout(false);
@@ -305,7 +261,6 @@
         private System.Windows.Forms.TextBox txtDetalle;
         private System.Windows.Forms.Label lblTipoActividad;
         private System.Windows.Forms.DateTimePicker dtpFecha;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cboTipo;
         private System.Windows.Forms.Label lblDetalleActividad;
         private System.Windows.Forms.GroupBox mrcReunion;
@@ -318,9 +273,6 @@
         private System.Windows.Forms.CheckBox chkRepositorio;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblMostrar;
         private System.Windows.Forms.Button btnMostrar;
-        private System.Windows.Forms.ListBox listBox1;
     }
 }
