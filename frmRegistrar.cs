@@ -63,6 +63,21 @@ namespace pryGestion
             if (dtpFecha.Value > DateTime.Now)
             {
                 varTime = dtpFecha.Value.ToString();
+                if (cboTipo.SelectedIndex != -1) 
+                {
+                    if(varDetalle != "")
+                    {
+
+                    }
+                    else
+                    {
+
+                    }
+                }
+                else
+                {
+
+                }
                 varTipo = cboTipo.Text;
                 varDetalle = txtDetalle.Text;
 
@@ -120,7 +135,7 @@ namespace pryGestion
             }
             else
             {
-                MessageBox.Show("La fecha seleccionada es incorrecta");
+                MessageBox.Show("La fecha seleccionada es incorrecta, selecciones una posterior a hoy","Fecha incorrecta", MessageBoxButtons.OK, MessageBoxIcon.Warning) ;
 
             }
 
