@@ -12,20 +12,16 @@ namespace pryGestion
 {
     public partial class frmSignUp : Form
     {
-        public struct vector 
-        {
-            string[] Usuarios;
-        }
-        vector info;
+       
         public frmSignUp()
         {
             InitializeComponent();
-            sdad
+            
         }
 
         private void btnRegistro_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
