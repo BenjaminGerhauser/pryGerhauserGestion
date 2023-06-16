@@ -18,11 +18,13 @@ namespace pryGestion
     public partial class frmRegistrar : Form
     {
         string varTipo, varDetalle, varTareas, varTime, varInfo;
-        
-        
-        
-        
-        
+        string[] vecInfo = new string[3];   
+        int i;
+
+
+
+
+
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -52,6 +54,7 @@ namespace pryGestion
         public frmRegistrar()
         {
             InitializeComponent();
+            i = 0;
            
         }
 
@@ -67,15 +70,16 @@ namespace pryGestion
                 {
                     if(varDetalle != "")
                     {
-
+                        varDetalle = txtDetalle.Text;
                     }
                     else
                     {
-
+                        MessageBox.Show("Ingrese el detalle de la reunion");
                     }
                 }
                 else
                 {
+                    MessageBox.Show("Ingrese el tipo de reunion");
 
                 }
                 varTipo = cboTipo.Text;
@@ -129,6 +133,7 @@ namespace pryGestion
                     }
                 }
                 varInfo = varTime + varTipo + varDetalle + varTareas;
+                vecInfo[i] = varInfo;
 
 
 
@@ -150,10 +155,14 @@ namespace pryGestion
             chkInvestigacion.Enabled = false;
             chkNotas.Enabled = false;
             chkRepositorio.Enabled = false;
+
+            lbl.Text = vecInfo[i];
+            comboBox1.Items.Add(vecInfo[i]);
+            i++;
         }
 
    
-
+            
 
 
         private void btnMostrar_Click(object sender, EventArgs e)

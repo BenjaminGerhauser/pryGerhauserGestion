@@ -21,20 +21,30 @@ namespace pryGestion
         {
             switch (txtUsuario.Text)
             {
-                case "Benjamin¨":
+                case "Benjamin":
                     if(txtContraseña.Text == "benja123")
                     {
                         this.Hide();
                         frmRegistrar mostar = new frmRegistrar();
                         mostar.ShowDialog();
                     }
+                    else
+                    {
+                        MessageBox.Show("Contraseña incorrecta");
+
+                    }
                     break;
-                case "Benjamin":
-                    if (txtContraseña.Text == "benja123")
+                case "Hola":
+                    if (txtContraseña.Text == "hola123")
                     {
                         this.Hide();
                         frmMain mostar = new frmMain();
                         mostar.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Contraseña incorrecta");
+
                     }
                     break;
                 case "User":
@@ -44,12 +54,22 @@ namespace pryGestion
                         frmMain mostar = new frmMain();
                         mostar.ShowDialog();
                     }
+                    else
+                    {
+                        MessageBox.Show("Contraseña incorrecta");
+
+                    }
                     break;case "Admin":
                     if(txtContraseña.Text == "Admin")
                     {
                         this.Hide();
                         frmMain mostar = new frmMain();
                         mostar.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Contraseña incorrecta");
+
                     }
                     break;
             }
