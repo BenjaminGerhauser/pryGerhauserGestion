@@ -13,6 +13,7 @@ namespace pryGestion
     public partial class frmLogin : Form
     {
         public string[,] matrizUsuario = new string[5, 2] ;
+        int click;
         public frmLogin()
         {
             InitializeComponent();
@@ -20,17 +21,18 @@ namespace pryGestion
             matrizUsuario[0, 1] = "Admin";
             matrizUsuario[1, 0] = "Benjamin";
             matrizUsuario[1, 1] = "Benja123";
-            for (int f = 1; f < matrizUsuario.GetLength(0); f++)
+            for (int f = 2; f < matrizUsuario.GetLength(0); f++)
             {
-                for (int c = 1; c < matrizUsuario.GetLength(1); c++)
+                for (int c = 2; c < matrizUsuario.GetLength(1); c++)
                 {
                     matrizUsuario[f, c] = "";
                 }
             }
+            click = 0;
         }
 
         
-        frmRegistrar mostar = new frmRegistrar();
+        frmRegistrar Registrar = new frmRegistrar();
 
 
         private void btnIngresar_Click(object sender, EventArgs e)
@@ -43,11 +45,12 @@ namespace pryGestion
                 if (txtUsuario.Text == matrizUsuario[f, 0] && txtContraseña.Text == matrizUsuario[f, 1])
                 {
                     this.Hide();
-                    mostar.ShowDialog();
+                    Registrar.ShowDialog();
+                    break;
                 }
                 else
                 {
-                    MessageBox.Show("Usuario o contraseña incorrectos");
+                    lblError.Visible = true;
                 }
             }
             
@@ -105,6 +108,25 @@ namespace pryGestion
             //        }
             //        break;
             //}
+        }
+
+        
+
+        private void btnNuevoUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkVerContra_CheckedChanged(object sender, EventArgs e)
+        {
+            if(chkVerContra.Checked)
+            {
+                txtContraseña.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtContraseña.UseSystemPasswordChar = true;
+            }
         }
     }
 }

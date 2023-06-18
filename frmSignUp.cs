@@ -15,18 +15,50 @@ namespace pryGestion
         frmLogin objetoLogin = new frmLogin();
         string varNewUsuario, varNewContra, varRepetir;
         int indiceFila, f;
+
+        private void chkVerContra_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkVerContra.Checked)
+            {
+                txtNewContraseña.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtNewContraseña.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void chkVerRepetir_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkVerContra.Checked)
+            {
+                txtRepetir.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtRepetir.UseSystemPasswordChar = true;
+            }
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            objetoLogin.ShowDialog();
+        }
+
         public frmSignUp()
         {
             InitializeComponent();
-            objetoLogin.matrizUsuario[0, 0] = "Benja";
-            objetoLogin.matrizUsuario[0, 1] = "Benja123";
-            for (int f = 1; f < objetoLogin.matrizUsuario.GetLength(0); f++)
-            {
-                for (int c = 1; c < objetoLogin.matrizUsuario.GetLength(1); c++)
-                {
-                    objetoLogin.matrizUsuario[f, c] = "";
-                }
-            }
+            //objetoLogin.matrizUsuario[0, 0] = "Benja";
+            //objetoLogin.matrizUsuario[0, 1] = "Benja123";
+            //for (int f = 1; f < objetoLogin.matrizUsuario.GetLength(0); f++)
+            //{
+            //    for (int c = 1; c < objetoLogin.matrizUsuario.GetLength(1); c++)
+            //    {
+            //        objetoLogin.matrizUsuario[f, c] = "";
+            //    }
+            //}
         }
 
         private void btnRegistro_Click(object sender, EventArgs e)

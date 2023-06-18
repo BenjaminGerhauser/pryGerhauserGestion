@@ -33,13 +33,15 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.btnRegistro = new System.Windows.Forms.Button();
-            this.btnInicioSesion = new System.Windows.Forms.Button();
             this.lblRepetir = new System.Windows.Forms.Label();
             this.txtRepetir = new System.Windows.Forms.TextBox();
             this.lblUserError = new System.Windows.Forms.Label();
             this.lblErrorNewContra = new System.Windows.Forms.Label();
             this.lblErrorRepetir = new System.Windows.Forms.Label();
             this.lblUsuarioExiste = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.chkVerContra = new System.Windows.Forms.CheckBox();
+            this.chkVerRepetir = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // txtNewUsuario
@@ -55,6 +57,7 @@
             this.txtNewContraseña.Name = "txtNewContraseña";
             this.txtNewContraseña.Size = new System.Drawing.Size(115, 20);
             this.txtNewContraseña.TabIndex = 1;
+            this.txtNewContraseña.UseSystemPasswordChar = true;
             // 
             // lblUsuario
             // 
@@ -86,15 +89,6 @@
             this.btnRegistro.UseVisualStyleBackColor = true;
             this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
             // 
-            // btnInicioSesion
-            // 
-            this.btnInicioSesion.Location = new System.Drawing.Point(90, 252);
-            this.btnInicioSesion.Name = "btnInicioSesion";
-            this.btnInicioSesion.Size = new System.Drawing.Size(76, 22);
-            this.btnInicioSesion.TabIndex = 5;
-            this.btnInicioSesion.Text = "Iniciar sesion";
-            this.btnInicioSesion.UseVisualStyleBackColor = true;
-            // 
             // lblRepetir
             // 
             this.lblRepetir.AutoSize = true;
@@ -109,8 +103,10 @@
             // 
             this.txtRepetir.Location = new System.Drawing.Point(70, 172);
             this.txtRepetir.Name = "txtRepetir";
+            this.txtRepetir.PasswordChar = '*';
             this.txtRepetir.Size = new System.Drawing.Size(115, 20);
             this.txtRepetir.TabIndex = 7;
+            this.txtRepetir.UseSystemPasswordChar = true;
             // 
             // lblUserError
             // 
@@ -156,18 +152,52 @@
             this.lblUsuarioExiste.Text = "Usuario esxistente";
             this.lblUsuarioExiste.Visible = false;
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(90, 262);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(76, 20);
+            this.btnCancelar.TabIndex = 12;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // chkVerContra
+            // 
+            this.chkVerContra.AutoSize = true;
+            this.chkVerContra.Location = new System.Drawing.Point(191, 101);
+            this.chkVerContra.Name = "chkVerContra";
+            this.chkVerContra.Size = new System.Drawing.Size(80, 30);
+            this.chkVerContra.TabIndex = 13;
+            this.chkVerContra.Text = "  Mostrar \r\nContraseña";
+            this.chkVerContra.UseVisualStyleBackColor = true;
+            this.chkVerContra.CheckedChanged += new System.EventHandler(this.chkVerContra_CheckedChanged);
+            // 
+            // chkVerRepetir
+            // 
+            this.chkVerRepetir.AutoSize = true;
+            this.chkVerRepetir.Location = new System.Drawing.Point(191, 167);
+            this.chkVerRepetir.Name = "chkVerRepetir";
+            this.chkVerRepetir.Size = new System.Drawing.Size(80, 30);
+            this.chkVerRepetir.TabIndex = 14;
+            this.chkVerRepetir.Text = "  Mostrar \r\nContraseña";
+            this.chkVerRepetir.UseVisualStyleBackColor = true;
+            this.chkVerRepetir.CheckedChanged += new System.EventHandler(this.chkVerRepetir_CheckedChanged);
+            // 
             // frmSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(259, 332);
+            this.ClientSize = new System.Drawing.Size(270, 294);
+            this.Controls.Add(this.chkVerRepetir);
+            this.Controls.Add(this.chkVerContra);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblUsuarioExiste);
             this.Controls.Add(this.lblErrorRepetir);
             this.Controls.Add(this.lblErrorNewContra);
             this.Controls.Add(this.lblUserError);
             this.Controls.Add(this.txtRepetir);
             this.Controls.Add(this.lblRepetir);
-            this.Controls.Add(this.btnInicioSesion);
             this.Controls.Add(this.btnRegistro);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
@@ -187,12 +217,14 @@
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.Button btnRegistro;
-        private System.Windows.Forms.Button btnInicioSesion;
         private System.Windows.Forms.Label lblRepetir;
         private System.Windows.Forms.TextBox txtRepetir;
         private System.Windows.Forms.Label lblUserError;
         private System.Windows.Forms.Label lblErrorNewContra;
         private System.Windows.Forms.Label lblErrorRepetir;
         private System.Windows.Forms.Label lblUsuarioExiste;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.CheckBox chkVerContra;
+        private System.Windows.Forms.CheckBox chkVerRepetir;
     }
 }
