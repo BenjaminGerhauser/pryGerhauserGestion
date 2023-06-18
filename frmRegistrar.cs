@@ -143,21 +143,15 @@ namespace pryGestion
                     btnRegistrar.Enabled = false;
 
                 }
-                
-
-
-
-
+       
             }
             else
             {
-                MessageBox.Show("La fecha seleccionada es incorrecta, selecciones una posterior a hoy","Fecha incorrecta", MessageBoxButtons.OK, MessageBoxIcon.Warning) ;
+                MessageBox.Show("La fecha seleccionada es incorrecta, selecciones una posterior a hoy","Fecha incorrecta", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning) ;
 
             }
-            //if (indicefila == 3)
-            //{
-            //    MessageBox.Show("Maximo de tareas registradas");
-            //}
+            
 
             txtDetalle.Text = "";
             rbSi.Checked = false;
@@ -186,7 +180,6 @@ namespace pryGestion
         private void btnMostrar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //frmMostrar mostrar = new frmMostrar();
             objetoMostrar.ShowDialog();
         }
 

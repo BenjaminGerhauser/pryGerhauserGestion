@@ -52,7 +52,7 @@
             "Analisis",
             "Diagrama de base de datos",
             "Programacion"});
-            this.cboActividad.Location = new System.Drawing.Point(123, 28);
+            this.cboActividad.Location = new System.Drawing.Point(85, 25);
             this.cboActividad.Name = "cboActividad";
             this.cboActividad.Size = new System.Drawing.Size(121, 21);
             this.cboActividad.TabIndex = 0;
@@ -68,7 +68,7 @@
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(500, 330);
+            this.btnVolver.Location = new System.Drawing.Point(500, 317);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             // btnMostrarDatos
             // 
-            this.btnMostrarDatos.Location = new System.Drawing.Point(407, 331);
+            this.btnMostrarDatos.Location = new System.Drawing.Point(405, 318);
             this.btnMostrarDatos.Name = "btnMostrarDatos";
             this.btnMostrarDatos.Size = new System.Drawing.Size(75, 22);
             this.btnMostrarDatos.TabIndex = 4;
@@ -128,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 450);
+            this.ClientSize = new System.Drawing.Size(607, 361);
             this.Controls.Add(this.dataGridViewMuestraTareas);
             this.Controls.Add(this.btnMostrarDatos);
             this.Controls.Add(this.btnVolver);
