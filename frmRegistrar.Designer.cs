@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistrar));
             this.lblFecha = new System.Windows.Forms.Label();
             this.txtDetalle = new System.Windows.Forms.TextBox();
             this.lblTipoActividad = new System.Windows.Forms.Label();
@@ -244,8 +245,9 @@
             this.Controls.Add(this.lblTipoActividad);
             this.Controls.Add(this.txtDetalle);
             this.Controls.Add(this.lblFecha);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistrar";
-            this.Text = "Registro";
+            this.Text = "Registrar actividad";
             this.mrcReunion.ResumeLayout(false);
             this.mrcReunion.PerformLayout();
             this.mrcTareas.ResumeLayout(false);

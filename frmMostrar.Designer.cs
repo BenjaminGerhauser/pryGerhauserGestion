@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMostrar));
             this.cboActividad = new System.Windows.Forms.ComboBox();
             this.lblActividad = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
@@ -74,6 +75,7 @@
             this.btnVolver.TabIndex = 3;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnMostrarDatos
             // 
@@ -134,8 +136,9 @@
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.lblActividad);
             this.Controls.Add(this.cboActividad);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMostrar";
-            this.Text = "Mostrar";
+            this.Text = "Lista de actividades";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMuestraTareas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

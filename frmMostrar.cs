@@ -70,7 +70,11 @@ namespace pryGestion
             }
         }
 
-        
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            frmRegistrar registrar = new frmRegistrar();
+            registrar.ShowDialog();
+        }
     } 
 }
 

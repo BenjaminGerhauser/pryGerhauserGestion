@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSignUp));
             this.txtNewUsuario = new System.Windows.Forms.TextBox();
             this.txtNewContraseña = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
@@ -204,8 +205,9 @@
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.txtNewContraseña);
             this.Controls.Add(this.txtNewUsuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSignUp";
-            this.Text = "frmSignUp";
+            this.Text = "Crear nuevo usuario";
             this.ResumeLayout(false);
             this.PerformLayout();
 

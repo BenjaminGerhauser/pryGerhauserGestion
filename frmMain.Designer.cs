@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.btnInicioSesion = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnCrearUsuario = new System.Windows.Forms.Button();
@@ -72,6 +73,7 @@
             this.Controls.Add(this.btnCrearUsuario);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnInicioSesion);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
             this.Text = "Registro de actividades - Desarrollo de Software";
             this.ResumeLayout(false);
