@@ -30,9 +30,15 @@
         {
             this.cboActividad = new System.Windows.Forms.ComboBox();
             this.lblActividad = new System.Windows.Forms.Label();
-            this.lstbMostrar = new System.Windows.Forms.ListBox();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnMostrarDatos = new System.Windows.Forms.Button();
+            this.dataGridViewMuestraTareas = new System.Windows.Forms.DataGridView();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TipoActividad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Detalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Reunion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tareas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMuestraTareas)).BeginInit();
             this.SuspendLayout();
             // 
             // cboActividad
@@ -60,17 +66,9 @@
             this.lblActividad.TabIndex = 1;
             this.lblActividad.Text = "Actividad";
             // 
-            // lstbMostrar
-            // 
-            this.lstbMostrar.FormattingEnabled = true;
-            this.lstbMostrar.Location = new System.Drawing.Point(31, 73);
-            this.lstbMostrar.Name = "lstbMostrar";
-            this.lstbMostrar.Size = new System.Drawing.Size(325, 225);
-            this.lstbMostrar.TabIndex = 2;
-            // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(280, 331);
+            this.btnVolver.Location = new System.Drawing.Point(500, 330);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 3;
@@ -79,7 +77,7 @@
             // 
             // btnMostrarDatos
             // 
-            this.btnMostrarDatos.Location = new System.Drawing.Point(199, 331);
+            this.btnMostrarDatos.Location = new System.Drawing.Point(407, 331);
             this.btnMostrarDatos.Name = "btnMostrarDatos";
             this.btnMostrarDatos.Size = new System.Drawing.Size(75, 22);
             this.btnMostrarDatos.TabIndex = 4;
@@ -87,18 +85,58 @@
             this.btnMostrarDatos.UseVisualStyleBackColor = true;
             this.btnMostrarDatos.Click += new System.EventHandler(this.btnMostrarDatos_Click);
             // 
+            // dataGridViewMuestraTareas
+            // 
+            this.dataGridViewMuestraTareas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMuestraTareas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Fecha,
+            this.TipoActividad,
+            this.Detalle,
+            this.Reunion,
+            this.Tareas});
+            this.dataGridViewMuestraTareas.Location = new System.Drawing.Point(31, 70);
+            this.dataGridViewMuestraTareas.Name = "dataGridViewMuestraTareas";
+            this.dataGridViewMuestraTareas.Size = new System.Drawing.Size(544, 195);
+            this.dataGridViewMuestraTareas.TabIndex = 5;
+            // 
+            // Fecha
+            // 
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            // 
+            // TipoActividad
+            // 
+            this.TipoActividad.HeaderText = "Tipo de actividad";
+            this.TipoActividad.Name = "TipoActividad";
+            // 
+            // Detalle
+            // 
+            this.Detalle.HeaderText = "Detalle";
+            this.Detalle.Name = "Detalle";
+            // 
+            // Reunion
+            // 
+            this.Reunion.HeaderText = "Reunion";
+            this.Reunion.Name = "Reunion";
+            // 
+            // Tareas
+            // 
+            this.Tareas.HeaderText = "Tareas";
+            this.Tareas.Name = "Tareas";
+            // 
             // frmMostrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 450);
+            this.ClientSize = new System.Drawing.Size(728, 450);
+            this.Controls.Add(this.dataGridViewMuestraTareas);
             this.Controls.Add(this.btnMostrarDatos);
             this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.lstbMostrar);
             this.Controls.Add(this.lblActividad);
             this.Controls.Add(this.cboActividad);
             this.Name = "frmMostrar";
             this.Text = "Mostrar";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMuestraTareas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,6 +148,11 @@
         private System.Windows.Forms.Label lblActividad;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnMostrarDatos;
-        public System.Windows.Forms.ListBox lstbMostrar;
+        private System.Windows.Forms.DataGridView dataGridViewMuestraTareas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TipoActividad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Detalle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Reunion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tareas;
     }
 }
