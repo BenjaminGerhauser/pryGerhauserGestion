@@ -46,14 +46,14 @@
             // 
             // txtNewUsuario
             // 
-            this.txtNewUsuario.Location = new System.Drawing.Point(70, 37);
+            this.txtNewUsuario.Location = new System.Drawing.Point(83, 36);
             this.txtNewUsuario.Name = "txtNewUsuario";
             this.txtNewUsuario.Size = new System.Drawing.Size(115, 20);
             this.txtNewUsuario.TabIndex = 0;
             // 
             // txtNewContraseña
             // 
-            this.txtNewContraseña.Location = new System.Drawing.Point(70, 106);
+            this.txtNewContraseña.Location = new System.Drawing.Point(83, 105);
             this.txtNewContraseña.Name = "txtNewContraseña";
             this.txtNewContraseña.Size = new System.Drawing.Size(115, 20);
             this.txtNewContraseña.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(67, 18);
+            this.lblUsuario.Location = new System.Drawing.Point(80, 17);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(54, 16);
             this.lblUsuario.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(67, 87);
+            this.lblContraseña.Location = new System.Drawing.Point(80, 86);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(76, 16);
             this.lblContraseña.TabIndex = 3;
@@ -81,7 +81,7 @@
             // 
             // btnRegistro
             // 
-            this.btnRegistro.Location = new System.Drawing.Point(70, 223);
+            this.btnRegistro.Location = new System.Drawing.Point(83, 222);
             this.btnRegistro.Name = "btnRegistro";
             this.btnRegistro.Size = new System.Drawing.Size(115, 23);
             this.btnRegistro.TabIndex = 4;
@@ -93,7 +93,7 @@
             // 
             this.lblRepetir.AutoSize = true;
             this.lblRepetir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRepetir.Location = new System.Drawing.Point(67, 153);
+            this.lblRepetir.Location = new System.Drawing.Point(80, 152);
             this.lblRepetir.Name = "lblRepetir";
             this.lblRepetir.Size = new System.Drawing.Size(123, 16);
             this.lblRepetir.TabIndex = 6;
@@ -101,9 +101,8 @@
             // 
             // txtRepetir
             // 
-            this.txtRepetir.Location = new System.Drawing.Point(70, 172);
+            this.txtRepetir.Location = new System.Drawing.Point(83, 171);
             this.txtRepetir.Name = "txtRepetir";
-            this.txtRepetir.PasswordChar = '*';
             this.txtRepetir.Size = new System.Drawing.Size(115, 20);
             this.txtRepetir.TabIndex = 7;
             this.txtRepetir.UseSystemPasswordChar = true;
@@ -112,7 +111,7 @@
             // 
             this.lblUserError.AutoSize = true;
             this.lblUserError.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblUserError.Location = new System.Drawing.Point(87, 60);
+            this.lblUserError.Location = new System.Drawing.Point(100, 59);
             this.lblUserError.Name = "lblUserError";
             this.lblUserError.Size = new System.Drawing.Size(79, 13);
             this.lblUserError.TabIndex = 8;
@@ -123,7 +122,7 @@
             // 
             this.lblErrorNewContra.AutoSize = true;
             this.lblErrorNewContra.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblErrorNewContra.Location = new System.Drawing.Point(77, 129);
+            this.lblErrorNewContra.Location = new System.Drawing.Point(90, 128);
             this.lblErrorNewContra.Name = "lblErrorNewContra";
             this.lblErrorNewContra.Size = new System.Drawing.Size(98, 13);
             this.lblErrorNewContra.TabIndex = 9;
@@ -134,7 +133,7 @@
             // 
             this.lblErrorRepetir.AutoSize = true;
             this.lblErrorRepetir.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblErrorRepetir.Location = new System.Drawing.Point(46, 195);
+            this.lblErrorRepetir.Location = new System.Drawing.Point(59, 194);
             this.lblErrorRepetir.Name = "lblErrorRepetir";
             this.lblErrorRepetir.Size = new System.Drawing.Size(174, 13);
             this.lblErrorRepetir.TabIndex = 10;
@@ -145,7 +144,7 @@
             // 
             this.lblUsuarioExiste.AutoSize = true;
             this.lblUsuarioExiste.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblUsuarioExiste.Location = new System.Drawing.Point(82, 73);
+            this.lblUsuarioExiste.Location = new System.Drawing.Point(95, 72);
             this.lblUsuarioExiste.Name = "lblUsuarioExiste";
             this.lblUsuarioExiste.Size = new System.Drawing.Size(93, 13);
             this.lblUsuarioExiste.TabIndex = 11;
@@ -154,7 +153,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(90, 262);
+            this.btnCancelar.Location = new System.Drawing.Point(103, 261);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(76, 20);
             this.btnCancelar.TabIndex = 12;
@@ -165,7 +164,8 @@
             // chkVerContra
             // 
             this.chkVerContra.AutoSize = true;
-            this.chkVerContra.Location = new System.Drawing.Point(191, 101);
+            this.chkVerContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.chkVerContra.Location = new System.Drawing.Point(204, 101);
             this.chkVerContra.Name = "chkVerContra";
             this.chkVerContra.Size = new System.Drawing.Size(80, 30);
             this.chkVerContra.TabIndex = 13;
@@ -176,7 +176,8 @@
             // chkVerRepetir
             // 
             this.chkVerRepetir.AutoSize = true;
-            this.chkVerRepetir.Location = new System.Drawing.Point(191, 167);
+            this.chkVerRepetir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.chkVerRepetir.Location = new System.Drawing.Point(204, 167);
             this.chkVerRepetir.Name = "chkVerRepetir";
             this.chkVerRepetir.Size = new System.Drawing.Size(80, 30);
             this.chkVerRepetir.TabIndex = 14;
@@ -188,7 +189,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(270, 294);
+            this.ClientSize = new System.Drawing.Size(283, 294);
             this.Controls.Add(this.chkVerRepetir);
             this.Controls.Add(this.chkVerContra);
             this.Controls.Add(this.btnCancelar);

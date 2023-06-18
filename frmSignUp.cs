@@ -44,7 +44,8 @@ namespace pryGestion
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            objetoLogin.ShowDialog();
+            frmMain Main = new frmMain();
+            Main.ShowDialog();
         }
 
         public frmSignUp()
@@ -79,7 +80,7 @@ namespace pryGestion
                     }
                     else
                     {
-                        if (objetoLogin.matrizUsuario[indiceFila, 0] == "")
+                        if (objetoLogin.matrizUsuario[indiceFila, 0] == null)
                         {
                             objetoLogin.matrizUsuario[indiceFila, 0] = varNewUsuario;
                             if (txtNewContraseña.Text != "")
@@ -100,6 +101,9 @@ namespace pryGestion
                             {
                                 lblErrorRepetir.Visible = true;
                             }
+                            this.Hide();
+                            
+                            objetoLogin.ShowDialog();
                             break;
                         }
                         else

@@ -21,14 +21,13 @@ namespace pryGestion
             matrizUsuario[0, 1] = "Admin";
             matrizUsuario[1, 0] = "Benjamin";
             matrizUsuario[1, 1] = "Benja123";
-            for (int f = 2; f < matrizUsuario.GetLength(0); f++)
-            {
-                for (int c = 2; c < matrizUsuario.GetLength(1); c++)
-                {
-                    matrizUsuario[f, c] = "";
-                }
-            }
-            click = 0;
+            //for (int f = 2; f < matrizUsuario.GetLength(0); f++)
+            //{
+            //    for (int c = 2; c < matrizUsuario.GetLength(1); c++)
+            //    {
+            //        matrizUsuario[f, c] = "";
+            //    }
+            //}
         }
 
         
@@ -114,7 +113,9 @@ namespace pryGestion
 
         private void btnNuevoUsuario_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            frmSignUp singnup = new frmSignUp();
+            singnup.ShowDialog();
         }
 
         private void chkVerContra_CheckedChanged(object sender, EventArgs e)
@@ -127,6 +128,13 @@ namespace pryGestion
             {
                 txtContraseña.UseSystemPasswordChar = true;
             }
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMain Main = new frmMain();
+            Main.ShowDialog();
         }
     }
 }

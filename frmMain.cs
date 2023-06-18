@@ -20,8 +20,15 @@ namespace pryGestion
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmRegistrar Registrar = new frmRegistrar();    
-            Registrar.ShowDialog(); 
+            frmLogin Login = new frmLogin();    
+            Login.ShowDialog(); 
+        }
+
+        private void btnCrearUsuario_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmSignUp signUp = new frmSignUp();
+            signUp.ShowDialog();
         }
     }
 }
