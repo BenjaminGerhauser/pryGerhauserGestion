@@ -207,6 +207,10 @@
             this.Controls.Add(this.txtNewContraseña);
             this.Controls.Add(this.txtNewUsuario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(299, 375);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(299, 375);
             this.Name = "frmSignUp";
             this.Text = "Crear nuevo usuario";
             this.ResumeLayout(false);

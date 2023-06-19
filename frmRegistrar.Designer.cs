@@ -246,6 +246,10 @@
             this.Controls.Add(this.txtDetalle);
             this.Controls.Add(this.lblFecha);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(376, 495);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(376, 495);
             this.Name = "frmRegistrar";
             this.Text = "Registrar actividad";
             this.mrcReunion.ResumeLayout(false);

@@ -74,6 +74,10 @@
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnInicioSesion);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(542, 196);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(542, 196);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de actividades - Desarrollo de Software";
