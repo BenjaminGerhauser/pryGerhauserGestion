@@ -44,6 +44,7 @@ namespace pryGestion
                 if (txtUsuario.Text == matrizUsuario[f, 0] && txtContraseña.Text == matrizUsuario[f, 1])
                 {
                     this.Hide();
+                    Registrar.StartPosition = FormStartPosition.CenterScreen;
                     Registrar.ShowDialog();
                     break;
                 }
@@ -115,6 +116,7 @@ namespace pryGestion
         {
             this.Hide();
             frmSignUp singnup = new frmSignUp();
+            singnup.StartPosition = FormStartPosition.CenterScreen;
             singnup.ShowDialog();
         }
 
@@ -123,10 +125,12 @@ namespace pryGestion
             if(chkVerContra.Checked)
             {
                 txtContraseña.UseSystemPasswordChar = false;
+                txtContraseña.Focus();
             }
             else
             {
                 txtContraseña.UseSystemPasswordChar = true;
+                txtContraseña.Focus();
             }
         }
 
@@ -134,7 +138,10 @@ namespace pryGestion
         {
             this.Hide();
             frmMain Main = new frmMain();
+            Main.StartPosition = FormStartPosition.CenterScreen;
             Main.ShowDialog();
         }
+
+        
     }
 }

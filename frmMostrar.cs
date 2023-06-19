@@ -72,7 +72,9 @@ namespace pryGestion
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmRegistrar registrar = new frmRegistrar();
+            registrar.StartPosition = FormStartPosition.CenterScreen;
             registrar.ShowDialog();
         }
     } 

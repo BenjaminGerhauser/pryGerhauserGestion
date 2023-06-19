@@ -64,7 +64,7 @@
             this.txtDetalle.Location = new System.Drawing.Point(107, 101);
             this.txtDetalle.Name = "txtDetalle";
             this.txtDetalle.Size = new System.Drawing.Size(100, 20);
-            this.txtDetalle.TabIndex = 1;
+            this.txtDetalle.TabIndex = 2;
             // 
             // lblTipoActividad
             // 
@@ -80,7 +80,7 @@
             this.dtpFecha.Location = new System.Drawing.Point(107, 15);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(200, 20);
-            this.dtpFecha.TabIndex = 3;
+            this.dtpFecha.TabIndex = 0;
             // 
             // cboTipo
             // 
@@ -96,7 +96,7 @@
             this.cboTipo.Location = new System.Drawing.Point(107, 57);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(121, 21);
-            this.cboTipo.TabIndex = 5;
+            this.cboTipo.TabIndex = 1;
             // 
             // lblDetalleActividad
             // 
@@ -114,7 +114,7 @@
             this.mrcReunion.Location = new System.Drawing.Point(18, 139);
             this.mrcReunion.Name = "mrcReunion";
             this.mrcReunion.Size = new System.Drawing.Size(200, 100);
-            this.mrcReunion.TabIndex = 7;
+            this.mrcReunion.TabIndex = 3;
             this.mrcReunion.TabStop = false;
             this.mrcReunion.Text = "Reunion";
             // 
@@ -151,7 +151,7 @@
             this.mrcTareas.Location = new System.Drawing.Point(18, 246);
             this.mrcTareas.Name = "mrcTareas";
             this.mrcTareas.Size = new System.Drawing.Size(317, 100);
-            this.mrcTareas.TabIndex = 8;
+            this.mrcTareas.TabIndex = 4;
             this.mrcTareas.TabStop = false;
             this.mrcTareas.Text = "Tareas";
             // 
@@ -204,7 +204,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(260, 377);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -214,7 +214,7 @@
             this.btnRegistrar.Location = new System.Drawing.Point(179, 377);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
-            this.btnRegistrar.TabIndex = 10;
+            this.btnRegistrar.TabIndex = 5;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
@@ -224,7 +224,7 @@
             this.btnMostrar.Location = new System.Drawing.Point(18, 377);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(75, 21);
-            this.btnMostrar.TabIndex = 13;
+            this.btnMostrar.TabIndex = 7;
             this.btnMostrar.Text = "Mostrar";
             this.btnMostrar.UseVisualStyleBackColor = true;
             this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);

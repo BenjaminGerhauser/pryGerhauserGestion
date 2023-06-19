@@ -27,6 +27,7 @@ namespace pryGestion
         {
             this.Hide();
             frmMain frmMain = new frmMain();
+            frmMain.StartPosition = FormStartPosition.CenterScreen;
             frmMain.ShowDialog();
         }
 
@@ -180,6 +181,7 @@ namespace pryGestion
         private void btnMostrar_Click(object sender, EventArgs e)
         {
             this.Hide();
+            objetoMostrar.StartPosition = FormStartPosition.CenterScreen;
             objetoMostrar.ShowDialog();
         }
 

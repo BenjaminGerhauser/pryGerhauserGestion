@@ -52,7 +52,7 @@
             this.lblTitulo.Location = new System.Drawing.Point(126, 32);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(285, 20);
-            this.lblTitulo.TabIndex = 2;
+            this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Sistema de registro de actividades";
             // 
             // btnCrearUsuario
@@ -60,7 +60,7 @@
             this.btnCrearUsuario.Location = new System.Drawing.Point(193, 115);
             this.btnCrearUsuario.Name = "btnCrearUsuario";
             this.btnCrearUsuario.Size = new System.Drawing.Size(139, 21);
-            this.btnCrearUsuario.TabIndex = 3;
+            this.btnCrearUsuario.TabIndex = 2;
             this.btnCrearUsuario.Text = "Crear nuevo usuario";
             this.btnCrearUsuario.UseVisualStyleBackColor = true;
             this.btnCrearUsuario.Click += new System.EventHandler(this.btnCrearUsuario_Click);
@@ -75,6 +75,7 @@
             this.Controls.Add(this.btnInicioSesion);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de actividades - Desarrollo de Software";
             this.ResumeLayout(false);
             this.PerformLayout();

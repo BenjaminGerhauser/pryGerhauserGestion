@@ -72,7 +72,7 @@
             this.btnVolver.Location = new System.Drawing.Point(500, 317);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
-            this.btnVolver.TabIndex = 3;
+            this.btnVolver.TabIndex = 2;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
@@ -82,7 +82,7 @@
             this.btnMostrarDatos.Location = new System.Drawing.Point(405, 318);
             this.btnMostrarDatos.Name = "btnMostrarDatos";
             this.btnMostrarDatos.Size = new System.Drawing.Size(75, 22);
-            this.btnMostrarDatos.TabIndex = 4;
+            this.btnMostrarDatos.TabIndex = 1;
             this.btnMostrarDatos.Text = "Mostrar";
             this.btnMostrarDatos.UseVisualStyleBackColor = true;
             this.btnMostrarDatos.Click += new System.EventHandler(this.btnMostrarDatos_Click);
@@ -99,7 +99,7 @@
             this.dataGridViewMuestraTareas.Location = new System.Drawing.Point(31, 70);
             this.dataGridViewMuestraTareas.Name = "dataGridViewMuestraTareas";
             this.dataGridViewMuestraTareas.Size = new System.Drawing.Size(544, 195);
-            this.dataGridViewMuestraTareas.TabIndex = 5;
+            this.dataGridViewMuestraTareas.TabIndex = 3;
             // 
             // Fecha
             // 

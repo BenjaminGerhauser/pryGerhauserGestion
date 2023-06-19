@@ -54,7 +54,7 @@
             // 
             // txtNewContraseña
             // 
-            this.txtNewContraseña.Location = new System.Drawing.Point(83, 105);
+            this.txtNewContraseña.Location = new System.Drawing.Point(82, 94);
             this.txtNewContraseña.Name = "txtNewContraseña";
             this.txtNewContraseña.Size = new System.Drawing.Size(115, 20);
             this.txtNewContraseña.TabIndex = 1;
@@ -67,25 +67,25 @@
             this.lblUsuario.Location = new System.Drawing.Point(80, 17);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(54, 16);
-            this.lblUsuario.TabIndex = 2;
+            this.lblUsuario.TabIndex = 7;
             this.lblUsuario.Text = "Usuario";
             // 
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(80, 86);
+            this.lblContraseña.Location = new System.Drawing.Point(79, 75);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(76, 16);
-            this.lblContraseña.TabIndex = 3;
+            this.lblContraseña.TabIndex = 10;
             this.lblContraseña.Text = "Contraseña";
             // 
             // btnRegistro
             // 
-            this.btnRegistro.Location = new System.Drawing.Point(83, 222);
+            this.btnRegistro.Location = new System.Drawing.Point(83, 255);
             this.btnRegistro.Name = "btnRegistro";
             this.btnRegistro.Size = new System.Drawing.Size(115, 23);
-            this.btnRegistro.TabIndex = 4;
+            this.btnRegistro.TabIndex = 5;
             this.btnRegistro.Text = "Registrarse";
             this.btnRegistro.UseVisualStyleBackColor = true;
             this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
@@ -94,18 +94,18 @@
             // 
             this.lblRepetir.AutoSize = true;
             this.lblRepetir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRepetir.Location = new System.Drawing.Point(80, 152);
+            this.lblRepetir.Location = new System.Drawing.Point(79, 164);
             this.lblRepetir.Name = "lblRepetir";
             this.lblRepetir.Size = new System.Drawing.Size(123, 16);
-            this.lblRepetir.TabIndex = 6;
+            this.lblRepetir.TabIndex = 12;
             this.lblRepetir.Text = "Repetir Contraseña";
             // 
             // txtRepetir
             // 
-            this.txtRepetir.Location = new System.Drawing.Point(83, 171);
+            this.txtRepetir.Location = new System.Drawing.Point(82, 183);
             this.txtRepetir.Name = "txtRepetir";
             this.txtRepetir.Size = new System.Drawing.Size(115, 20);
-            this.txtRepetir.TabIndex = 7;
+            this.txtRepetir.TabIndex = 3;
             this.txtRepetir.UseSystemPasswordChar = true;
             // 
             // lblUserError
@@ -115,7 +115,7 @@
             this.lblUserError.Location = new System.Drawing.Point(100, 59);
             this.lblUserError.Name = "lblUserError";
             this.lblUserError.Size = new System.Drawing.Size(79, 13);
-            this.lblUserError.TabIndex = 8;
+            this.lblUserError.TabIndex = 9;
             this.lblUserError.Text = "Ingrese usuario";
             this.lblUserError.Visible = false;
             // 
@@ -123,10 +123,10 @@
             // 
             this.lblErrorNewContra.AutoSize = true;
             this.lblErrorNewContra.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblErrorNewContra.Location = new System.Drawing.Point(90, 128);
+            this.lblErrorNewContra.Location = new System.Drawing.Point(90, 140);
             this.lblErrorNewContra.Name = "lblErrorNewContra";
             this.lblErrorNewContra.Size = new System.Drawing.Size(98, 13);
-            this.lblErrorNewContra.TabIndex = 9;
+            this.lblErrorNewContra.TabIndex = 11;
             this.lblErrorNewContra.Text = "Ingrese contraseña";
             this.lblErrorNewContra.Visible = false;
             // 
@@ -134,10 +134,10 @@
             // 
             this.lblErrorRepetir.AutoSize = true;
             this.lblErrorRepetir.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblErrorRepetir.Location = new System.Drawing.Point(59, 194);
+            this.lblErrorRepetir.Location = new System.Drawing.Point(58, 228);
             this.lblErrorRepetir.Name = "lblErrorRepetir";
             this.lblErrorRepetir.Size = new System.Drawing.Size(174, 13);
-            this.lblErrorRepetir.TabIndex = 10;
+            this.lblErrorRepetir.TabIndex = 13;
             this.lblErrorRepetir.Text = "Ingrese nuevamente su contraseña";
             this.lblErrorRepetir.Visible = false;
             // 
@@ -145,19 +145,19 @@
             // 
             this.lblUsuarioExiste.AutoSize = true;
             this.lblUsuarioExiste.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblUsuarioExiste.Location = new System.Drawing.Point(95, 72);
+            this.lblUsuarioExiste.Location = new System.Drawing.Point(1, 59);
             this.lblUsuarioExiste.Name = "lblUsuarioExiste";
             this.lblUsuarioExiste.Size = new System.Drawing.Size(93, 13);
-            this.lblUsuarioExiste.TabIndex = 11;
+            this.lblUsuarioExiste.TabIndex = 8;
             this.lblUsuarioExiste.Text = "Usuario esxistente";
             this.lblUsuarioExiste.Visible = false;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(103, 261);
+            this.btnCancelar.Location = new System.Drawing.Point(103, 294);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(76, 20);
-            this.btnCancelar.TabIndex = 12;
+            this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -166,31 +166,32 @@
             // 
             this.chkVerContra.AutoSize = true;
             this.chkVerContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-            this.chkVerContra.Location = new System.Drawing.Point(204, 101);
+            this.chkVerContra.Location = new System.Drawing.Point(82, 120);
             this.chkVerContra.Name = "chkVerContra";
-            this.chkVerContra.Size = new System.Drawing.Size(80, 30);
-            this.chkVerContra.TabIndex = 13;
-            this.chkVerContra.Text = "  Mostrar \r\nContraseña";
+            this.chkVerContra.Size = new System.Drawing.Size(118, 17);
+            this.chkVerContra.TabIndex = 2;
+            this.chkVerContra.Text = "Mostrar Contraseña";
             this.chkVerContra.UseVisualStyleBackColor = true;
             this.chkVerContra.CheckedChanged += new System.EventHandler(this.chkVerContra_CheckedChanged);
+            this.chkVerContra.Click += new System.EventHandler(this.chkVerContra_Click);
             // 
             // chkVerRepetir
             // 
             this.chkVerRepetir.AutoSize = true;
             this.chkVerRepetir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-            this.chkVerRepetir.Location = new System.Drawing.Point(204, 167);
+            this.chkVerRepetir.Location = new System.Drawing.Point(82, 208);
             this.chkVerRepetir.Name = "chkVerRepetir";
-            this.chkVerRepetir.Size = new System.Drawing.Size(80, 30);
-            this.chkVerRepetir.TabIndex = 14;
-            this.chkVerRepetir.Text = "  Mostrar \r\nContraseña";
+            this.chkVerRepetir.Size = new System.Drawing.Size(118, 17);
+            this.chkVerRepetir.TabIndex = 4;
+            this.chkVerRepetir.Text = "Mostrar Contraseña";
             this.chkVerRepetir.UseVisualStyleBackColor = true;
-            this.chkVerRepetir.CheckedChanged += new System.EventHandler(this.chkVerRepetir_CheckedChanged);
+            this.chkVerRepetir.Click += new System.EventHandler(this.chkVerRepetir_Click);
             // 
             // frmSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(283, 294);
+            this.ClientSize = new System.Drawing.Size(283, 336);
             this.Controls.Add(this.chkVerRepetir);
             this.Controls.Add(this.chkVerContra);
             this.Controls.Add(this.btnCancelar);

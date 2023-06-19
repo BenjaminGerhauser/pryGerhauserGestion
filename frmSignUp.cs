@@ -16,28 +16,38 @@ namespace pryGestion
         string varNewUsuario, varNewContra, varRepetir;
         int indiceFila, f;
 
-        private void chkVerContra_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkVerContra.Checked)
-            {
-                txtNewContraseña.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtNewContraseña.UseSystemPasswordChar = true;
-            }
-        }
+        
 
-        private void chkVerRepetir_CheckedChanged(object sender, EventArgs e)
+        private void chkVerRepetir_Click(object sender, EventArgs e)
         {
-            if (chkVerContra.Checked)
+            if (chkVerRepetir.Checked == true)
             {
                 txtRepetir.UseSystemPasswordChar = false;
+                txtRepetir.Focus();
             }
             else
             {
                 txtRepetir.UseSystemPasswordChar = true;
+                txtRepetir.Focus();
             }
+        }
+
+        private void chkVerContra_Click(object sender, EventArgs e)
+        {
+            if (chkVerContra.Checked == true)
+            {
+                txtNewContraseña.UseSystemPasswordChar = false;
+                txtNewContraseña.Focus();
+            }
+            else
+            {
+                txtNewContraseña.UseSystemPasswordChar = true;
+                txtNewContraseña.Focus();
+            }
+        }
+
+        private void chkVerContra_CheckedChanged(object sender, EventArgs e)
+        {
 
         }
 
@@ -45,6 +55,7 @@ namespace pryGestion
         {
             this.Hide();
             frmMain Main = new frmMain();
+            Main.StartPosition = FormStartPosition.CenterScreen;
             Main.ShowDialog();
         }
 
@@ -102,7 +113,7 @@ namespace pryGestion
                                 lblErrorRepetir.Visible = true;
                             }
                             this.Hide();
-                            
+                            objetoLogin.StartPosition = FormStartPosition.CenterScreen;
                             objetoLogin.ShowDialog();
                             break;
                         }
