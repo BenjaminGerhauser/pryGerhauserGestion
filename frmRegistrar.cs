@@ -77,17 +77,16 @@ namespace pryGestion
                     else
                     {
                         MessageBox.Show("Ingrese el detalle de la reunion");
-                        //indicefila--;
+                        
                     }
                 }
                 else
                 {
                     MessageBox.Show("Ingrese el tipo de reunion");
-                    //indicefila--;
+                    
 
                 }
-                //varTipo = cboTipo.Text;
-                //varDetalle = txtDetalle.Text;
+                
 
                 if (rbSi.Checked == true)
                 {
