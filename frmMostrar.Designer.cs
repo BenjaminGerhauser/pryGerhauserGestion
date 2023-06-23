@@ -57,6 +57,7 @@
             this.cboActividad.Name = "cboActividad";
             this.cboActividad.Size = new System.Drawing.Size(121, 21);
             this.cboActividad.TabIndex = 0;
+            this.cboActividad.SelectedIndexChanged += new System.EventHandler(this.cboActividad_SelectedIndexChanged);
             // 
             // lblActividad
             // 

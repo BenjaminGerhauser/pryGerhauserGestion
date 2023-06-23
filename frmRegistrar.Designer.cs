@@ -125,7 +125,6 @@
             this.rbNo.Name = "rbNo";
             this.rbNo.Size = new System.Drawing.Size(39, 17);
             this.rbNo.TabIndex = 1;
-            this.rbNo.TabStop = true;
             this.rbNo.Text = "No";
             this.rbNo.UseVisualStyleBackColor = true;
             this.rbNo.Click += new System.EventHandler(this.rbNo_Click);
@@ -133,6 +132,7 @@
             // rbSi
             // 
             this.rbSi.AutoSize = true;
+            this.rbSi.Checked = true;
             this.rbSi.Location = new System.Drawing.Point(41, 28);
             this.rbSi.Name = "rbSi";
             this.rbSi.Size = new System.Drawing.Size(34, 17);

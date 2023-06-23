@@ -39,8 +39,7 @@ namespace pryGestion
             for (int f = 0; f < matrizDatos.GetLength(0); f++)
             {
                 if (cboActividad.SelectedIndex != -1)
-                {
-                    
+                {                    
                     if (matrizDatos[f, 1] == cboActividad.Text)
                     {
                         if (matrizDatos[f, c] != null)
@@ -76,6 +75,18 @@ namespace pryGestion
             frmRegistrar registrar = new frmRegistrar();
             registrar.StartPosition = FormStartPosition.CenterScreen;
             registrar.ShowDialog();
+        }
+
+        private void cboActividad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dataGridViewMuestraTareas.Rows.Clear();
+            for (int f = 0; f < matrizDatos.GetLength(0); f++)
+            {
+                if (matrizDatos[f,1] == cboActividad.Text )
+                {
+                    dataGridViewMuestraTareas.Rows.Add(matrizDatos[f,0], matrizDatos[f, 1], matrizDatos[f, 2], matrizDatos[f, 3], matrizDatos[f, 4]);
+                }
+            }
         }
     } 
 }

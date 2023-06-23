@@ -59,10 +59,7 @@ namespace pryGestion
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
-        {
-           
-
-
+        {           
             if (dtpFecha.Value > DateTime.Now)
             {
                 varTime = dtpFecha.Value.ToString();
@@ -73,65 +70,90 @@ namespace pryGestion
                     if (txtDetalle.Text != "")
                     {
                         varDetalle = txtDetalle.Text;
+
+                        if (rbSi.Checked == true)
+                        {
+                            varReunion = "Si";
+                        }
+                        else
+                        {
+                            varReunion = "No";
+                        }
+
+                        if (chkDebate.Checked)
+                        {
+                            varTareas += chkDebate.Text + " ";
+                        }
+
+                        if (chkInvestigacion.Checked)
+                        {
+                            varTareas += chkInvestigacion.Text + " ";
+                        }
+
+                        if (chkNotas.Checked)
+                        {
+                            varTareas += chkNotas.Text + " ";
+                        }
+
+                        if (chkRepositorio.Checked)
+                        {
+                            varTareas += chkRepositorio.Text + " ";
+                        }
+
+                        objetoMostrar.matrizDatos[indicefila, 0] = varTime;
+                        objetoMostrar.matrizDatos[indicefila, 1] = varTipo;
+                        objetoMostrar.matrizDatos[indicefila, 2] = varDetalle;
+                        objetoMostrar.matrizDatos[indicefila, 3] = varReunion;
+                        objetoMostrar.matrizDatos[indicefila, 4] = varTareas;
+                        indicefila++;
                     }
                     else
                     {
-                        MessageBox.Show("Ingrese el detalle de la reunion");
-                        
+                        MessageBox.Show("Ingrese el detalle de la reunion");                
                     }
                 }
                 else
                 {
                     MessageBox.Show("Ingrese el tipo de reunion");
-                    
-
                 }
                 
 
-                if (rbSi.Checked == true)
-                {
-                    varReunion = "Si";
-                    if (chkDebate.Checked)
-                    {
-                        varTareas += chkDebate.Text + " ";
-                    }
-                    
-                    if (chkInvestigacion.Checked)
-                    {
-                        varTareas += chkInvestigacion.Text + " ";
-                    }
+                //if (rbSi.Checked == true)
+                //{
+                //    varReunion = "Si";                   
+                //}
+                //else
+                //{
+                //    varReunion = "No";
+                //}
 
-                    if (chkNotas.Checked)
-                    {
-                        varTareas += chkNotas.Text + " ";
-                        
-                    }
-                    
-                    if (chkRepositorio.Checked)
-                    {
-                        varTareas += chkRepositorio.Text + " ";
-                    }
-                   
-                }
-                else
-                {
-                    if (rbNo.Checked == true)
-                    {
-                        varReunion = "No";
-                    }
-                    else
-                    {
-                        MessageBox.Show("Ingrece SI o NO");
-                        //indicefila--;
-                    }
-                }
+                //if (chkDebate.Checked)
+                //{
+                //    varTareas += chkDebate.Text + " ";
+                //}
+
+                //if (chkInvestigacion.Checked)
+                //{
+                //    varTareas += chkInvestigacion.Text + " ";
+                //}
+
+                //if (chkNotas.Checked)
+                //{
+                //    varTareas += chkNotas.Text + " ";
+                //}
+
+                //if (chkRepositorio.Checked)
+                //{
+                //    varTareas += chkRepositorio.Text + " ";
+                //}
                 //varInfo = varTime + varTipo + varDetalle + varTareas;
-                objetoMostrar.matrizDatos[indicefila, 0] = varTime;
-                objetoMostrar.matrizDatos[indicefila, 1] = varTipo;
-                objetoMostrar.matrizDatos[indicefila, 2] = varDetalle;
-                objetoMostrar.matrizDatos[indicefila, 3] = varReunion;
-                objetoMostrar.matrizDatos[indicefila, 4] = varTareas;
-                indicefila++;
+                //objetoMostrar.matrizDatos[indicefila, 0] = varTime;
+                //objetoMostrar.matrizDatos[indicefila, 1] = varTipo;
+                //objetoMostrar.matrizDatos[indicefila, 2] = varDetalle;
+                //objetoMostrar.matrizDatos[indicefila, 3] = varReunion;
+                //objetoMostrar.matrizDatos[indicefila, 4] = varTareas;
+                //indicefila++;
+
                 if (indicefila == 3)
                 {
                     MessageBox.Show("Maximo de tareas registradas");
@@ -141,7 +163,6 @@ namespace pryGestion
                     rbNo.Enabled = false;
                     rbSi.Enabled = false;
                     btnRegistrar.Enabled = false;
-
                 }
        
             }
@@ -149,12 +170,11 @@ namespace pryGestion
             {
                 MessageBox.Show("La fecha seleccionada es incorrecta, selecciones una posterior a hoy","Fecha incorrecta", 
                     MessageBoxButtons.OK, MessageBoxIcon.Warning) ;
-
             }
             
 
             txtDetalle.Text = "";
-            rbSi.Checked = false;
+            rbSi.Checked = true;
             rbNo.Checked = false;
             chkDebate.Checked = false;
             chkRepositorio.Checked = false;
